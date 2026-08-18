@@ -1,0 +1,218 @@
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- BODY ---------- */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+/* ---------- LAYOUT ---------- */
+.layout {
+  display: flex;
+}
+
+/* ---------- SIDEBAR ---------- */
+.sidebar {
+  width: 230px;
+  height: 100vh;
+  background: #020617;
+  color: white;
+  padding: 25px;
+}
+
+.sidebar h2 {
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px;
+  margin: 10px 0;
+  color: #cbd5f5;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: #1e293b;
+  color: white;
+}
+
+.sidebar a.active {
+  background: #2563eb;
+  color: white;
+}
+
+/* ---------- MAIN ---------- */
+.main {
+  flex: 1;
+  padding: 40px;
+  background: #f1f5f9;
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+/* ---------- CARDS ---------- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.card {
+  padding: 30px;
+  border-radius: 15px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.card span {
+  display: block;
+  margin-top: 8px;
+  font-size: 26px;
+}
+
+.card:hover {
+  transform: scale(1.04);
+}
+
+/* COLORS */
+.income { background: linear-gradient(135deg, #16a34a, #22c55e); }
+.expense { background: linear-gradient(135deg, #dc2626, #ef4444); }
+.investment { background: linear-gradient(135deg, #2563eb, #3b82f6); }
+.loan { background: linear-gradient(135deg, #f59e0b, #fbbf24); }
+.savings { background: linear-gradient(135deg, #9333ea, #a855f7); }
+.balance { background: linear-gradient(135deg, #111827, #374151); }
+
+/* ---------- BUTTON ---------- */
+.add-btn {
+  padding: 14px 22px;
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- TABLE ---------- */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 14px;
+  text-align: center;
+}
+
+th {
+  background: #e2e8f0;
+  font-size: 15px;
+}
+
+tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+/* Buttons inside table */
+button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 2px;
+  font-weight: bold;
+}
+
+button:nth-child(1) {
+  background: #2563eb;
+  color: white;
+}
+
+button:nth-child(2) {
+  background: #dc2626;
+  color: white;
+}
+
+/* ---------- FORM FULL PAGE ---------- */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 40px;
+}
+
+.form-card {
+  background: white;
+  padding: 60px;
+  border-radius: 20px;
+  width: 70%;                /* 🔥 takes most of screen */
+  max-width: 800px;         /* 🔥 prevents too wide */
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+.form-card h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-card input,
+.form-card select {
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  width: 100%;              /* 🔥 full width inputs */
+}
+
+.form-card button {
+  padding: 18px;
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-card button:hover {
+  transform: scale(1.03);
+}
+.bottom {
+  font-size: medium;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 30px;
+}

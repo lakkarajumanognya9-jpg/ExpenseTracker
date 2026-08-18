@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Entry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <div class="sidebar">
+    <h2>Finance</h2>
+    <a href="index.html">Dashboard</a>
+    <a href="transactions.html">Transactions</a>
+    <a href="add.html" class="active">Add Entry</a>
+  </div>
+
+  <div class="main center">
+
+    <div class="form-card">
+      <h2>Add Entry</h2>
+
+      <form onsubmit="addData(event)">
+        <input type="text" id="title" placeholder="Title" required>
+
+        <select id="type" onchange="updateCategories()">
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+          <option value="investment">Investment</option>
+          <option value="loan">Loan</option>
+          <option value="savings">Savings</option>
+        </select>
+
+        <select id="category"></select>
+
+        <input type="number" id="amount" placeholder="Amount" required>
+        <input type="date" id="date">
+
+        <button type="submit">Add Entry</button>
+      </form>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  updateCategories();
+});
+</script>
+
+</body>
+</html>
